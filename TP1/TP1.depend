@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1535925196 source:/home/nati/TP1/UTN_INPUT.c
+	<stdio_ext.h>
+	"UTN_INPUT.h"
+
+1535927640 /home/nati/TP1/UTN_INPUT.h
+
+1535924819 source:/home/nati/TP1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"UTN_INPUT.c"
+	"UTN_INPUT.h"
+
+1535925196 /home/nati/TP1/UTN_INPUT.c
+	<stdio_ext.h>
+	"UTN_INPUT.h"
+
+1535933728 source:/home/nati/Descargas/clase del viernes/TP1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"UTN_INPUT.h"
+
+1535932774 /home/nati/Descargas/clase del viernes/TP1/UTN_INPUT.h
+
+1535932774 source:/home/nati/Descargas/clase del viernes/TP1/UTN_INPUT.c
+	<stdio_ext.h>
+	"UTN_INPUT.h"
+
+1536189119 source:/home/fede/Descargas/TP1/UTN_INPUT.c
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536189119 /home/fede/Descargas/TP1/UTN_INPUT.h
+
+1536189119 source:/home/fede/Descargas/TP1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536115863 source:/home/nati/Descargas/TP1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536116086 /home/nati/Descargas/TP1/UTN_INPUT.h
+
+1536115105 source:/home/nati/Descargas/TP1/UTN_INPUT.c
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536189119 source:/home/fede/tp_laboratorio_1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536189119 /home/fede/tp_laboratorio_1/UTN_INPUT.h
+
+1536258662 source:/home/fede/tp_laboratorio_1/UTN_INPUT.c
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536259972 source:/home/fede/tp_laboratorio_1/TP1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
+1536189119 /home/fede/tp_laboratorio_1/TP1/UTN_INPUT.h
+
+1536259955 source:/home/fede/tp_laboratorio_1/TP1/UTN_INPUT.c
+	<stdio_ext.h>
+	<ctype.h>
+	"UTN_INPUT.h"
+
