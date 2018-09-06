@@ -62,9 +62,9 @@ float calcularMultiplicacion(float numUno, float numDos)
     return resultado;
 }
 
-int calcularFactorial(float numero)
+long int calcularFactorial(float numero)
 {
-    int resultado;
+    long int resultado;
 
     if(numero==0)
     {

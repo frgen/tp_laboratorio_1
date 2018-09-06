@@ -8,12 +8,14 @@ int main()
 {
     float numUno=0;
     float numDos=0;
+    float antUno=0;
+    float antDos=0;
     float suma=0;
     float resta=0;
     float division=0;
     float multiplicacion=0;
-    int factorialUno=1;
-    int factorialDos=1;
+    long int factorialUno=1;
+    long int factorialDos=1;
     char opcion;
 
     do
@@ -51,19 +53,29 @@ int main()
             {
             case 'S':
                 suma = calcularSuma(numUno, numDos);
+                antUno = numUno;
+                antDos = numDos;
                 break;
             case 'R':
                 resta = calcularResta(numUno, numDos);
+                antUno = numUno;
+                antDos = numDos;
                 break;
             case 'D':
                 division = calcularDivision(numUno, numDos);
+                antUno = numUno;
+                antDos = numDos;
                 break;
             case 'M':
                 multiplicacion = calcularMultiplicacion(numUno, numDos);
+                antUno = numUno;
+                antDos = numDos;
                 break;
             case 'F':
                 factorialUno = calcularFactorial(numUno);
                 factorialDos = calcularFactorial(numDos);
+                antUno = numUno;
+                antDos = numDos;
                 break;
             default:
                 printf("Opcion incorrecta\n");
@@ -80,6 +92,11 @@ int main()
             __fpurge(stdin);
             scanf("%c", &opcion);
             opcion = toupper(opcion);
+
+            if(numUno!=antUno || numDos!=antDos)
+            {
+                printf("AVISO: Calcular resultados de los nuevos operandos\n");
+            }
 
             switch(opcion)
             {
@@ -103,10 +120,10 @@ int main()
                 printf("La multiplicacion de A*B es: %.2f\n", multiplicacion);
                 break;
             case 'F':
-                if(numUno<=0 && numDos<=0)
+                if(numUno>=0 && numDos>=0)
                 {
-                    printf("El factorial de A es: %d\n", factorialUno);
-                    printf("El factorial de B es: %d\n", factorialDos);
+                    printf("El factorial de A es: %ld\n", factorialUno);
+                    printf("El factorial de B es: %ld\n", factorialDos);
                 }
                 else
                 {

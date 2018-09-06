@@ -52,8 +52,8 @@ float calcularDivision(float, float);
 /** \brief Calcula el factorial de los operandos ingresados
  *
  * \param float Almacena el operando
- * \return int Devuelve el factorial calculado
+ * \return long int Devuelve el factorial calculado
  *
  */
-int calcularFactorial(float);
+long int calcularFactorial(float);
 

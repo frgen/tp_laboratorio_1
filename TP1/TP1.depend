@@ -70,16 +70,16 @@
 	<ctype.h>
 	"UTN_INPUT.h"
 
-1536259972 source:/home/fede/tp_laboratorio_1/TP1/main.c
+1536272360 source:/home/fede/tp_laboratorio_1/TP1/main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
 	<ctype.h>
 	"UTN_INPUT.h"
 
-1536189119 /home/fede/tp_laboratorio_1/TP1/UTN_INPUT.h
+1536272512 /home/fede/tp_laboratorio_1/TP1/UTN_INPUT.h
 
-1536259955 source:/home/fede/tp_laboratorio_1/TP1/UTN_INPUT.c
+1536272512 source:/home/fede/tp_laboratorio_1/TP1/UTN_INPUT.c
 	<stdio_ext.h>
 	<ctype.h>
 	"UTN_INPUT.h"
