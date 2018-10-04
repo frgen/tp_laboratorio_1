@@ -1,50 +1,9 @@
 #include <stdio.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 #include "arrayEmployees.h"
-
-void menuEmployees(Employee* list, int len)
-{
-    char option;
-
-    do
-    {
-        printf("1.ALTAS\n2.MODIFICAR\n3.BAJA\n4.INFORMAR\n5.SALIR\n");
-        printf("Elija una opcion: ");
-        fflush(stdin);
-        scanf("%c", &option);
-
-        switch(option)
-        {
-        case '1':
-            printf("Alta de empleado\n");
-            //addEmployee();
-            break;
-        case '2':
-            printf("Modificacion de empleado\n");
-            //findEmployeeById();
-            break;
-        case '3':
-            printf("Borrado de empleado\n");
-            //removeEmployee();
-            break;
-        case '4':
-            printf("Muestra de empleado\n");
-            //printEmployee(list, len);
-            break;
-        case '5':
-            printf("Saliendo...\n");
-            break;
-        default:
-            printf("Opcion incorrecta\n");
-        }
-
-    }
-    while(option!='5');
-
-    return;
-}
 
 int initEmployees(Employee* list, int len)
 {
@@ -54,7 +13,6 @@ int initEmployees(Employee* list, int len)
     {
         list[i].isEmpty = VACIO;
     }
-
     return 0;
 }
 
@@ -77,33 +35,88 @@ int initEmployeesHardCode(Employee* list, int len)
         strcpy(list[i].lastName, lastName[i]);
         list[i].isEmpty=OCUPADO;
     }
-
     return 0;
 }
 
 int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector)
 {
-    printf("Ingrese el ID: ");
-    scanf("%d", &id);
-    printf("Ingrese el nombre: ");
-    gets(name);
-    printf("Ingrese el apellido: ");
-    gets(lastName);
-    printf("Ingrese el salario: ");
-    scanf("%f", &salary);
-    printf("Ingrese el sector: ");
-    scanf("%d", &sector);
-
+    int i;
+    for(i=0; i<len; i++)
+    {
+        if(list[i].isEmpty != OCUPADO)
+        {
+            printf("Ingrese el ID: ");
+            scanf("%d", &list[i].id);
+            printf("Ingrese el nombre: ");
+            //gets(name);
+            scanf("%s", list[i].name);
+            printf("Ingrese el apellido: ");
+            //gets(lastName);
+            scanf("%s", list[i].lastName);
+            printf("Ingrese el salario: ");
+            scanf("%f", &list[i].salary);
+            printf("Ingrese el sector: ");
+            scanf("%d", &list[i].sector);
+            list[i].isEmpty = OCUPADO;
+            break;
+        }
+        else if(i==len-1)
+        {
+            printf("No hay lugar!\n");
+        }
+    }
     return 0;
 }
 
 int findEmployeeById(Employee* list, int len,int id)
 {
-    return 0; //NULL
+    int aux;
+    int i;
+    printf("Ingrese el numero de ID: ");
+    scanf("%d", &aux);
+
+    for(i=0; i<len; i++)
+    {
+        if(list[i].id==aux)
+        {
+            printf("Bingo! El empleado es: %s\n", list[i].name);
+            id = list[i].id;
+            break;
+        }
+        else if(i==len-1)
+        {
+            printf("Numero no encontrado\n");
+            id = 0;
+        }
+    }
+    return id; //NULL
 }
 
 int removeEmployee(Employee* list, int len, int id)
 {
+    int i;
+    char option;
+
+    id = findEmployeeById(list,len,list[len].id);
+
+    for(i=0; i<len; i++)
+    {
+        if(list[i].id==id)
+        {
+            printf("Esta seguro de borrar(s/n)?(No se puede deshacer)\n");
+            //fflush(stdin);
+            __fpurge(stdin);
+            scanf("%c", &option);
+            option = toupper(option);
+
+            if(option=='S')
+            {
+                list[i].isEmpty = ELIMINADO;
+                printf("Borrando...borrada exitosa!\n");
+            }
+            break;
+        }
+    }
     return 0;
 }
 
@@ -117,9 +130,11 @@ int printEmployees(Employee* list, int length)
     int i;
     for(i=0; i<length; i++)
     {
-        printf("%d\t%s\t%s\t%.2f\t%d\n", list[i].id,list[i].name,list[i].lastName,
-               list[i].salary,list[i].sector);
+        if(list[i].isEmpty==OCUPADO)
+        {
+            printf("%d\t%s\t%s\t%.2f\t%d\n", list[i].id,list[i].name,list[i].lastName,
+                   list[i].salary,list[i].sector);
+        }
     }
-
     return 0;
 }

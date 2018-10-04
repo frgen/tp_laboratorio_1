@@ -4,9 +4,13 @@
 	<stdlib.h>
 	"arrayEmployees.h"
 
+1538612618 oyees.h"
+
 1538018973 /home/fede/Documentos/tp_laboratorio_1/TP2/TP2/arrayEmployees.h
 	<stdio.h>
 	<stdlib.h>
+
+1538590968 
 
 1538018931 source:/home/fede/Documentos/tp_laboratorio_1/TP2/TP2/main.c
 	<stdio.h>
@@ -40,4 +44,28 @@
 	"utn.h"
 
 1538590904 e:\tp2\utn.h
+
+1538694572 source:/home/fede/wincarpet/TP2/arrayEmployees.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"arrayEmployees.h"
+
+1538676196 /home/fede/wincarpet/TP2/arrayEmployees.h
+	<stdio.h>
+	<stdlib.h>
+
+1538681866 source:/home/fede/wincarpet/TP2/main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1538678130 /home/fede/wincarpet/TP2/menu.h
+	"arrayEmployees.h"
+
+1538694572 source:/home/fede/wincarpet/TP2/menu.c
+	<stdio_ext.h>
+	"menu.h"
 

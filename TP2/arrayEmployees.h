@@ -15,7 +15,6 @@ struct
     int isEmpty;
 } typedef Employee;
 
-void menuEmployees(Employee*, int);
 
 int initEmployeesHardCode(Employee*, int);
 
