@@ -13,3 +13,31 @@
 	<stdlib.h>
 	"arrayEmployees.h"
 
+1538611152 source:e:\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"arrayEmployees.h"
+
+1538612618 e:\tp2\arrayemployees.h
+	<stdio.h>
+	<stdlib.h>
+
+1538612618 source:e:\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arrayEmployees.h"
+
+1538590968 source:e:\tp2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1538590968 e:\tp2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1538590904 e:\tp2\utn.h
+
