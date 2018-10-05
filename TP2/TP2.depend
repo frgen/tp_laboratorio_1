@@ -95,3 +95,26 @@
 	<stdio_ext.h>
 	"menu.h"
 
+1538751288 source:c:\users\alumno\desktop\tp_laboratorio_1-master\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1538706252 c:\users\alumno\desktop\tp_laboratorio_1-master\tp2\menu.h
+	"arrayEmployees.h"
+
+1538706252 c:\users\alumno\desktop\tp_laboratorio_1-master\tp2\arrayemployees.h
+	<stdio.h>
+	<stdlib.h>
+
+1538751908 source:c:\users\alumno\desktop\tp_laboratorio_1-master\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"arrayEmployees.h"
+
+1538751972 source:c:\users\alumno\desktop\tp_laboratorio_1-master\tp2\menu.c
+	<stdio.h>
+	"menu.h"
+

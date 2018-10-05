@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
@@ -104,8 +104,8 @@ int removeEmployee(Employee* list, int len, int id)
         if(list[i].id==id)
         {
             printf("Esta seguro de borrar(s/n)?(No se puede deshacer)\n");
-            //fflush(stdin);
-            __fpurge(stdin);
+            fflush(stdin);
+            //__fpurge(stdin);
             scanf("%c", &option);
             option = toupper(option);
 
@@ -122,11 +122,32 @@ int removeEmployee(Employee* list, int len, int id)
 
 int sortEmployees(Employee* list, int len, int order)
 {
-    /*int i;
+
+    int i;
+    int j;
     for(i=0; i<len; i++)
     {
-        strcmp(list[i].name, list[i+1].name);
-    }*/
+        for(j=i+1; i<len-1; i++)
+        {
+            if(stricmp(list[i].name, list[j].name)==0)
+            {
+                printf("Son iguales\n");
+                break;
+            }
+            else if(stricmp(list[i].name, list[j].name)>0)
+            {
+
+                printf("%s esta despues que %s\n",list[i].name, list[j].name);
+                strcpy(list[i].name, list[j].name);
+            }
+            else if(stricmp(list[i].name, list[j].name)<0)
+            {
+
+                printf("%s esta antes que %s\n",list[j].name, list[i].name);
+                strcpy(list[j].name, list[i].name);
+            }
+        }
+    }
 
     return 0;
 }

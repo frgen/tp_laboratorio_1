@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include "menu.h"
 
 void menuEmployees(Employee* list, int len)
@@ -12,8 +12,8 @@ void menuEmployees(Employee* list, int len)
     {
         printf("1.ALTAS\n2.MODIFICAR\n3.BAJA\n4.INFORMAR\n5.SALIR\n");
         printf("Elija una opcion: ");
-        //fflush(stdin);
-        __fpurge(stdin);
+        fflush(stdin);
+        //__fpurge(stdin);
         scanf("%c", &option);
 
         switch(option)
@@ -57,6 +57,7 @@ void menuEmployees(Employee* list, int len)
         case '4':
             if(flag!=0)
             {
+                sortEmployees(list, len, 0);
                 printEmployees(list, len);
             }
             else
