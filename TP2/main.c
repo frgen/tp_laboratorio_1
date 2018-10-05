@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include "menu.h"
 
@@ -10,7 +11,7 @@ int main()
 
     initEmployees(employeeList, LIST);  //biblioteca "arrayEmployees.h"
 
-    initEmployeesHardCode(employeeList, LIST);  //biblioteca "arrayEmployees.h"
+    //initEmployeesHardCode(employeeList, LIST);  //biblioteca "arrayEmployees.h"
 
     menuEmployees(employeeList, LIST);  //biblioteca "menu.h"
 

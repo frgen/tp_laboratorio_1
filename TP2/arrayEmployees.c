@@ -11,7 +11,7 @@ int initEmployees(Employee* list, int len)
 
     for(i=0; i<len; i++)
     {
-        list[i].isEmpty = VACIO;
+        list[i].isEmpty = EMPTY;
     }
     return 0;
 }
@@ -33,7 +33,7 @@ int initEmployeesHardCode(Employee* list, int len)
         list[i].sector=sector[i];
         strcpy(list[i].name, name[i]);
         strcpy(list[i].lastName, lastName[i]);
-        list[i].isEmpty=OCUPADO;
+        list[i].isEmpty=FULL;
     }
     return 0;
 }
@@ -43,7 +43,7 @@ int addEmployee(Employee* list, int len, int id, char name[],char lastName[],flo
     int i;
     for(i=0; i<len; i++)
     {
-        if(list[i].isEmpty != OCUPADO)
+        if(list[i].isEmpty != FULL)
         {
             printf("Ingrese el ID: ");
             scanf("%d", &list[i].id);
@@ -57,7 +57,7 @@ int addEmployee(Employee* list, int len, int id, char name[],char lastName[],flo
             scanf("%f", &list[i].salary);
             printf("Ingrese el sector: ");
             scanf("%d", &list[i].sector);
-            list[i].isEmpty = OCUPADO;
+            list[i].isEmpty = FULL;
             break;
         }
         else if(i==len-1)
@@ -70,26 +70,26 @@ int addEmployee(Employee* list, int len, int id, char name[],char lastName[],flo
 
 int findEmployeeById(Employee* list, int len,int id)
 {
-    int aux;
+    int index;
     int i;
     printf("Ingrese el numero de ID: ");
-    scanf("%d", &aux);
+    scanf("%d", &index);
 
     for(i=0; i<len; i++)
     {
-        if(list[i].id==aux)
+        if(list[i].id==index)
         {
             printf("Bingo! El empleado es: %s\n", list[i].name);
-            id = list[i].id;
+            index = list[i].id;
             break;
         }
         else if(i==len-1)
         {
             printf("Numero no encontrado\n");
-            id = 0;
+            index = -1;
         }
     }
-    return id; //NULL
+    return index;
 }
 
 int removeEmployee(Employee* list, int len, int id)
@@ -111,8 +111,8 @@ int removeEmployee(Employee* list, int len, int id)
 
             if(option=='S')
             {
-                list[i].isEmpty = ELIMINADO;
-                printf("Borrando...borrada exitosa!\n");
+                list[i].isEmpty = FIRED;
+                printf("Borrando...Listo!\n");
             }
             break;
         }
@@ -122,6 +122,12 @@ int removeEmployee(Employee* list, int len, int id)
 
 int sortEmployees(Employee* list, int len, int order)
 {
+    /*int i;
+    for(i=0; i<len; i++)
+    {
+        strcmp(list[i].name, list[i+1].name);
+    }*/
+
     return 0;
 }
 
@@ -130,7 +136,7 @@ int printEmployees(Employee* list, int length)
     int i;
     for(i=0; i<length; i++)
     {
-        if(list[i].isEmpty==OCUPADO)
+        if(list[i].isEmpty==FULL)
         {
             printf("%d\t%s\t%s\t%.2f\t%d\n", list[i].id,list[i].name,list[i].lastName,
                    list[i].salary,list[i].sector);

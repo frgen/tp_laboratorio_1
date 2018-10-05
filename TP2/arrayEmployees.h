@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define OCUPADO 1
-#define VACIO 0
-#define ELIMINADO -1
+#define FULL 1
+#define EMPTY 0
+#define FIRED -1
 
 struct
 {

@@ -69,3 +69,29 @@
 	<stdio_ext.h>
 	"menu.h"
 
+1538700953 source:/home/nati/Descargas/tp_laboratorio_1-master/TP2/arrayEmployees.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"arrayEmployees.h"
+
+1538700938 /home/nati/Descargas/tp_laboratorio_1-master/TP2/arrayEmployees.h
+	<stdio.h>
+	<stdlib.h>
+
+1538700416 source:/home/nati/Descargas/tp_laboratorio_1-master/TP2/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	"menu.h"
+
+1538694852 /home/nati/Descargas/tp_laboratorio_1-master/TP2/menu.h
+	"arrayEmployees.h"
+
+1538701020 source:/home/nati/Descargas/tp_laboratorio_1-master/TP2/menu.c
+	<stdio.h>
+	<stdio_ext.h>
+	"menu.h"
+

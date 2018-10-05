@@ -1,8 +1,10 @@
+#include <stdio.h>
 #include <stdio_ext.h>
 #include "menu.h"
 
 void menuEmployees(Employee* list, int len)
 {
+    int i, aux;
     char option;
     int flag=0;
 
@@ -17,7 +19,6 @@ void menuEmployees(Employee* list, int len)
         switch(option)
         {
         case '1':
-            printf("Alta de empleado\n");
             addEmployee(list, len, list[len].id, list[len].name, list[len].lastName,
                         list[len].salary, list[len].sector);
             flag=1;
@@ -25,9 +26,18 @@ void menuEmployees(Employee* list, int len)
         case '2':
             if(flag!=0)
             {
-                printf("Modificacion de empleado\n");
-                findEmployeeById(list,len,list[len].id);
-                printf("Buscando...busqueda exitosa!\n");
+                aux = findEmployeeById(list,len,list[len].id);
+
+                for(i=0; i<len; i++)
+                {
+                    if(list[i].id==aux)
+                    {
+                        list[i].isEmpty=EMPTY;
+                        addEmployee(list, len, list[i].id, list[i].name, list[i].lastName,
+                                    list[i].salary, list[i].sector);
+                        break;
+                    }
+                }
             }
             else
             {
@@ -37,7 +47,6 @@ void menuEmployees(Employee* list, int len)
         case '3':
             if(flag!=0)
             {
-                printf("borrado de empleado\n");
                 removeEmployee(list,len,list[len].id);
             }
             else
@@ -48,7 +57,6 @@ void menuEmployees(Employee* list, int len)
         case '4':
             if(flag!=0)
             {
-                printf("Muestra de empleado\n");
                 printEmployees(list, len);
             }
             else
