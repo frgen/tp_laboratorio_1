@@ -17,21 +17,21 @@
 	<stdlib.h>
 	"arrayEmployees.h"
 
-1538611152 source:e:\tp2\arrayemployees.c
+1538783484 source:e:\tp2\arrayemployees.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<string.h>
 	"arrayEmployees.h"
 
-1538612618 e:\tp2\arrayemployees.h
+1538783484 e:\tp2\arrayemployees.h
 	<stdio.h>
 	<stdlib.h>
 
-1538612618 source:e:\tp2\main.c
+1538783495 source:e:\tp2\main.c
 	<stdio.h>
 	<stdlib.h>
-	"arrayEmployees.h"
+	"menu.h"
 
 1538590968 source:e:\tp2\utn.c
 	<stdio.h>
@@ -115,6 +115,13 @@
 	"arrayEmployees.h"
 
 1538751972 source:c:\users\alumno\desktop\tp_laboratorio_1-master\tp2\menu.c
+	<stdio.h>
+	"menu.h"
+
+1538752791 e:\tp2\menu.h
+	"arrayEmployees.h"
+
+1538783023 source:e:\tp2\menu.c
 	<stdio.h>
 	"menu.h"
 

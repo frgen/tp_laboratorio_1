@@ -3,17 +3,17 @@
 #include <stdlib.h>
 #include "menu.h"
 
-#define LIST 5
+#define LIST 1000
 
 int main()
 {
-    Employee employeeList[LIST]; //biblioteca "arrayEmployees.h"
+    Employee employeeList[LIST];
 
-    initEmployees(employeeList, LIST);  //biblioteca "arrayEmployees.h"
+    initEmployees(employeeList, LIST);
 
-    initEmployeesHardCode(employeeList, LIST);  //biblioteca "arrayEmployees.h"
+    //initEmployeesHardCode(employeeList, LIST);
 
-    menuEmployees(employeeList, LIST);  //biblioteca "menu.h"
+    menuEmployees(employeeList, LIST);
 
     return 0;
 }

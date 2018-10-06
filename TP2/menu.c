@@ -6,6 +6,7 @@ void menuEmployees(Employee* list, int len)
 {
     int i, aux;
     char option;
+    char subOption;
     int flag=0;
 
     do
@@ -27,15 +28,38 @@ void menuEmployees(Employee* list, int len)
             if(flag!=0)
             {
                 aux = findEmployeeById(list,len,list[len].id);
-
                 for(i=0; i<len; i++)
                 {
                     if(list[i].id==aux)
                     {
-                        list[i].isEmpty=EMPTY;
-                        addEmployee(list, len, list[i].id, list[i].name, list[i].lastName,
-                                    list[i].salary, list[i].sector);
-                        break;
+                        printf("1.NOMBRE\n2.APELLIDO\n3.SALARIO\n4.SECTOR\n");
+                        printf("Elija una opcion: ");
+                        fflush(stdin);
+                        //__fpurge(stdin);
+                        scanf("%c", &subOption);
+
+                        switch(subOption)
+                        {
+                        case '1':
+                            printf("Ingrese el nombre: ");
+                            scanf("%s", list[i].name);
+                            break;
+                        case '2':
+                            printf("Ingrese el apellido: ");
+                            scanf("%s", list[i].lastName);
+                            break;
+                        case '3':
+                            printf("Ingrese el salario: ");
+                            scanf("%f", &list[i].salary);
+                            break;
+                        case '4':
+                            printf("Ingrese el sector: ");
+                            scanf("%d", &list[i].sector);
+                            break;
+                        default:
+                            printf("Opcion incorrecta\n");
+                            break;
+                        }
                     }
                 }
             }
@@ -57,7 +81,7 @@ void menuEmployees(Employee* list, int len)
         case '4':
             if(flag!=0)
             {
-                sortEmployees(list, len, 0);
+                sortEmployees(list, len, 1);
                 printEmployees(list, len);
             }
             else
