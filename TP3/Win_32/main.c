@@ -41,28 +41,36 @@ int main()
             printf("Cargando datos en texto...\n");
             break;
         case 2:
+            //controller_loadFromBinary("data.csv",listaEmpleados);
             printf("Cargando datos en binario...\n");
             break;
         case 3:
             employee_new();
+            //controller_addEmployee(LinkedList* pArrayListEmployee);
             printf("Dando de alta...\n");
             break;
         case 4:
+            //controller_editEmployee(LinkedList* pArrayListEmployee);
             printf("Modificando datos de empleado\n");
             break;
         case 5:
+            //controller_removeEmployee(LinkedList* pArrayListEmployee);
             printf("Dando de baja...\n");
             break;
         case 6:
+            //controller_ListEmployee(LinkedList* pArrayListEmployee);
             printf("Listando...\n");
             break;
         case 7:
+            //controller_sortEmployee(LinkedList* pArrayListEmployee);
             printf("Ordenando...\n");
             break;
         case 8:
+            //controller_saveAsText(char* path , LinkedList* pArrayListEmployee);
             printf("Guardando datos en texto...\n");
             break;
         case 9:
+            //controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee);
             printf("Guardando datos en binario...\n");
             break;
         case 10:
