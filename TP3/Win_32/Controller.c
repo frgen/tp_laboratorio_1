@@ -13,12 +13,6 @@
  */
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
-    //int cantidadEscrita, longitudTexto;
-
-    //pArrayListEmployee =
-
-    //fwrite(path, sizeof(LinkedList), strlen(LinkedList), pArrayListEmployee);
-
     return 1;
 }
 

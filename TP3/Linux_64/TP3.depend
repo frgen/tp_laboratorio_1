@@ -53,19 +53,24 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1533133026 source:/home/nati/Descargas/TP3/Linux_64/Controller.c
+1541477872 source:/home/fede/Descargas/TP3/Linux_64/Controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
+	"parser.h"
 
-1533133022 /home/nati/Descargas/TP3/Linux_64/LinkedList.h
+1541447245 /home/fede/Descargas/TP3/Linux_64/LinkedList.h
 
-1533133022 /home/nati/Descargas/TP3/Linux_64/Employee.h
+1533133022 /home/fede/Descargas/TP3/Linux_64/Employee.h
 
-1533133022 source:/home/nati/Descargas/TP3/Linux_64/Employee.c
+1541476957 source:/home/fede/Descargas/TP3/Linux_64/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
 
-1540779891 source:/home/nati/Descargas/TP3/Linux_64/main.c
+1541477783 source:/home/fede/Descargas/TP3/Linux_64/main.c
 	<stdio.h>
 	<stdio_ext.h>
 	<stdlib.h>
@@ -73,11 +78,13 @@
 	"Controller.h"
 	"Employee.h"
 
-1533133022 /home/nati/Descargas/TP3/Linux_64/Controller.h
+1533133022 /home/fede/Descargas/TP3/Linux_64/Controller.h
 
-1533133022 source:/home/nati/Descargas/TP3/Linux_64/parser.c
+1541476982 source:/home/fede/Descargas/TP3/Linux_64/parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
+
+1533133022 /home/fede/Descargas/TP3/Linux_64/parser.h
 
