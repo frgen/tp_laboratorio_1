@@ -40,39 +40,30 @@ int main()
         {
         case 1:
             controller_loadFromText("data.csv",listaEmpleados);
-            printf("Cargando datos en texto...\n");
             break;
         case 2:
-            //controller_loadFromBinary("data.csv",listaEmpleados);
-            printf("Cargando datos en binario...\n");
+            controller_loadFromBinary("data.csv",listaEmpleados);
             break;
         case 3:
-            //controller_addEmployee(LinkedList* pArrayListEmployee);
-            printf("Dando de alta...\n");
+            controller_addEmployee(listaEmpleados);
             break;
         case 4:
-            //controller_editEmployee(LinkedList* pArrayListEmployee);
-            printf("Modificando datos de empleado\n");
+            controller_editEmployee(listaEmpleados);
             break;
         case 5:
-            //controller_removeEmployee(LinkedList* pArrayListEmployee);
-            printf("Dando de baja...\n");
+            controller_removeEmployee(listaEmpleados);
             break;
         case 6:
             controller_ListEmployee(listaEmpleados);
-            printf("Listando...\n");
             break;
         case 7:
-            //controller_sortEmployee(LinkedList* pArrayListEmployee);
-            printf("Ordenando...\n");
+            controller_sortEmployee(listaEmpleados);
             break;
         case 8:
-            //controller_saveAsText(char* path, LinkedList* pArrayListEmployee);
-            printf("Guardando datos en texto...\n");
+            controller_saveAsText("data.csv", listaEmpleados);
             break;
         case 9:
-            //controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee);
-            printf("Guardando datos en binario...\n");
+            controller_saveAsBinary("data.csv", listaEmpleados);
             break;
         case 10:
             printf("Saliendo...\n");

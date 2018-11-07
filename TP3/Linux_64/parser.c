@@ -13,7 +13,7 @@
 int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
 {
     int r, i = 0;
-    char var1[50], var3[50], var2[50], var4[50];
+    char var1[50], var2[50], var3[50], var4[50];
 
     pFile = fopen("data.csv","r");
 
@@ -25,14 +25,17 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
         {
             Employee* pAux = employee_new();
             employee_setId(pAux,atoi(var1));
-            //employee_setNombre(pAux,var2);
-            //employee_setHorasTrabajadas(pAux,var3);
+            employee_setNombre(pAux,var2);
+            employee_setHorasTrabajadas(pAux,(long int)var3);
+            employee_setSueldo(pAux, (long int)var4);
             //pArrayListEmployee[i] = pAux;
             i++;
         }
 
     }
     while(!feof(pFile));
+
+    fclose(pFile);
 
     return 1;
 }
@@ -46,6 +49,32 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
  */
 int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee)
 {
+
+    return 1;
+}
+
+int parser_EmployeeListText(FILE* pFile, LinkedList* pArrayListEmployee)
+{
+    int r, i = 0;
+    char var1[50], var2[50], var3[50], var4[50];
+
+    pFile = fopen("data.csv","r");
+
+    do
+    {
+        r =fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", var1, var2, var3, var4);
+
+        if(r==4)
+        {
+            printf("%s, %s, %s, %s\n", var1, var2, var3, var4);
+            //pArrayListEmployee[i] = pAux;
+            i++;
+        }
+
+    }
+    while(!feof(pFile));
+
+    fclose(pFile);
 
     return 1;
 }

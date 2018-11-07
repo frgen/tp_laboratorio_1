@@ -22,41 +22,81 @@ Employee* employee_new()
 Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr)
 {
     Employee* empleado;
+    int id, horasTrabajadas, sueldo=0;
 
     empleado = employee_new();
 
-    idStr = (int)idStr;
-    horasTrabajadasStr = (int)horasTrabajadasStr;
+    id = atoi(idStr);
+    horasTrabajadas = atoi(horasTrabajadasStr);
 
-    if(empleado != NULL)
-    {
-        employee_setId(empleado, idStr);
-        //employee_setHorasTrabajadas(empleado, horasTrabajadasStr);
-        //employee_setNombre(empleado, nombreStr);
-    }
+    employee_setId(empleado, id);
+    employee_setNombre(empleado, nombreStr);
+    employee_setHorasTrabajadas(empleado, horasTrabajadas);
+    employee_setSueldo(empleado, sueldo);
 
     return empleado;
 }
 
 int employee_setId(Employee* this,int id)
 {
-    //printf("Ingrese el id: ");
-    //scanf("%d", &id);
-
     this->id = id;
 
     return 0;
 }
 
-
 int employee_getId(Employee* this, int* id)
 {
-
-
     printf("%d", *id);
 
     return 0;
 }
 
+
+int employee_setNombre(Employee* this,char* nombre)
+{
+    strcpy(this->nombre, nombre);
+
+    return 0;
+}
+
+
+int employee_getNombre(Employee* this,char* nombre)
+{
+    printf("%s", this->nombre);
+
+    return 0;
+}
+
+
+int employee_setHorasTrabajadas(Employee* this,int horasTrabajadas)
+{
+    this->horasTrabajadas = horasTrabajadas;
+
+    return 0;
+}
+
+
+int employee_getHorasTrabajadas(Employee* this, int* horasTrabajadas)
+{
+    printf("%d", *horasTrabajadas);
+
+    return 0;
+}
+
+
+int employee_setSueldo(Employee* this,int sueldo)
+{
+    this->sueldo = sueldo;
+
+    return 0;
+}
+
+
+int employee_getSueldo(Employee* this, int* sueldo)
+{
+    printf("%d", *sueldo);
+
+    return 0;
+}
 
 

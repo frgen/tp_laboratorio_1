@@ -14,7 +14,14 @@
  */
 int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 {
-    parser_EmployeeFromText(path, pArrayListEmployee);
+    printf("Cargando datos en  modo texto...\n");
+
+    FILE* pFile;
+
+    pFile = fopen(path, "w");
+
+    fclose(pFile);
+
     return 1;
 }
 
@@ -27,6 +34,8 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
  */
 int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Cargando datos en  modo binario...\n");
+
     return 1;
 }
 
@@ -39,6 +48,8 @@ int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
  */
 int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Dando de alta...\n");
+
     return 1;
 }
 
@@ -51,6 +62,8 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_editEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Modificando datos de empleado\n");
+
     return 1;
 }
 
@@ -63,6 +76,8 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_removeEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Dando de baja...\n");
+
     return 1;
 }
 
@@ -75,16 +90,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
-    int i;
-    pArrayListEmployee = fopen("data.csv", "r");
-
-    for(i=0; i< 1000; i++)
-    {
-        //fscanf(*pArrayListEmployee, "%d\n", pArrayListEmployee);
-
-        printf("%d\n", &pArrayListEmployee);
-    }
-
+    printf("Listando...\n");
 
     return 1;
 }
@@ -98,6 +104,8 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Ordenando...\n");
+
     return 1;
 }
 
@@ -110,6 +118,8 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Guardando datos en  modo texto...\n");
+
     return 1;
 }
 
@@ -122,6 +132,8 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
  */
 int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Guardando datos en modo binario...\n");
+
     return 1;
 }
 
