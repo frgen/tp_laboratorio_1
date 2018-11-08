@@ -23,12 +23,11 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
 
         if(r==4)
         {
-            Employee* pAux = employee_new();
-            employee_setId(pAux,atoi(var1));
-            employee_setNombre(pAux,var2);
-            employee_setHorasTrabajadas(pAux,(long int)var3);
-            employee_setSueldo(pAux, (long int)var4);
-            //pArrayListEmployee[i] = pAux[i];
+            pArrayListEmployee = (LinkedList*)employee_new();
+            employee_setId((Employee*)pArrayListEmployee,atoi(var1));
+            employee_setNombre((Employee*)pArrayListEmployee,var2);
+            employee_setHorasTrabajadas((Employee*)pArrayListEmployee,(long int)var3);
+            employee_setSueldo((Employee*)pArrayListEmployee, (long int)var4);
             i++;
         }
 
