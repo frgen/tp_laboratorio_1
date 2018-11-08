@@ -14,11 +14,13 @@
  */
 int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 {
-    printf("Cargando datos en  modo texto...\n");
+    printf("Cargando datos en modo texto...\n");
 
     FILE* pFile;
 
-    pFile = fopen(path, "w");
+    pFile = fopen(path, "r");
+
+    parser_EmployeeFromText(pFile, pArrayListEmployee);
 
     fclose(pFile);
 
@@ -34,7 +36,7 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
  */
 int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
-    printf("Cargando datos en  modo binario...\n");
+    printf("Cargando datos en modo binario...\n");
 
     return 1;
 }
@@ -92,6 +94,14 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
     printf("Listando...\n");
 
+    FILE* pFile;
+
+    pFile = fopen("data.csv", "r");
+
+    parser_EmployeeListText(pFile, pArrayListEmployee);
+
+    fclose(pFile);
+
     return 1;
 }
 
@@ -118,7 +128,7 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 {
-    printf("Guardando datos en  modo texto...\n");
+    printf("Guardando datos en modo texto...\n");
 
     return 1;
 }
