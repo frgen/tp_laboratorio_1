@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Employee.h"
+#include "parser.h"
 
 
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
@@ -11,8 +12,18 @@
  * \return int
  *
  */
-int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
+int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Cargando datos en modo texto...\n");
+
+    FILE* pFile;
+
+    pFile = fopen(path, "r");
+
+    parser_EmployeeFromText(pFile, pArrayListEmployee);
+
+    fclose(pFile);
+
     return 1;
 }
 
@@ -23,8 +34,10 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
  * \return int
  *
  */
-int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
+int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Cargando datos en modo binario...\n");
+
     return 1;
 }
 
@@ -37,6 +50,8 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
  */
 int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Dando de alta...\n");
+
     return 1;
 }
 
@@ -49,6 +64,8 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_editEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Modificando datos de empleado\n");
+
     return 1;
 }
 
@@ -61,6 +78,8 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_removeEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Dando de baja...\n");
+
     return 1;
 }
 
@@ -73,6 +92,16 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Listando...\n");
+
+    FILE* pFile;
+
+    pFile = fopen("data.csv", "r");
+
+    parser_EmployeeListText(pFile, pArrayListEmployee);
+
+    fclose(pFile);
+
     return 1;
 }
 
@@ -85,6 +114,8 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
+    printf("Ordenando...\n");
+
     return 1;
 }
 
@@ -95,8 +126,10 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
  * \return int
  *
  */
-int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
+int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Guardando datos en modo texto...\n");
+
     return 1;
 }
 
@@ -107,8 +140,10 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
  * \return int
  *
  */
-int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
+int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
 {
+    printf("Guardando datos en modo binario...\n");
+
     return 1;
 }
 
