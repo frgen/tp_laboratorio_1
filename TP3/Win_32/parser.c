@@ -12,10 +12,12 @@
  */
 int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
 {
-    int len, r, i = 0;
+    int r, i = 0;
     char var1[50], var2[50], var3[50], var4[50];
 
-    len = ll_len(pArrayListEmployee);
+    Node* actual;
+    Employee* arrayEmpleados[10];
+    //Employee* auxiliar;
 
     do
     {
@@ -23,17 +25,31 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
 
         if(r==4)
         {
-            Employee* pAux = employee_new();
-            employee_setId(pAux,atoi(var1));
-            employee_setNombre(pAux,var2);
-            employee_setHorasTrabajadas(pAux,(long int)var3);
-            employee_setSueldo(pAux, (long int)var4);
-            //pArrayListEmployee[i] = pAux[i];
+            Employee* empleado = employee_new();
+            employee_setId(empleado,atoi(var1));
+            employee_setNombre(empleado,var2);
+            employee_setHorasTrabajadas(empleado, atoi(var3));
+            employee_setSueldo(empleado, atoi(var4));
+
+            actual = pArrayListEmployee->pFirstNode;
+
+            while(actual!=NULL)
+            {
+                actual = actual->pNextNode;
+            }
+
+            ll_add(pArrayListEmployee, empleado);
+
+            arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+
+            printf("%d %s %d %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+
             i++;
         }
 
     }
-    while(!feof(pFile) && i<len);
+    while(!feof(pFile));
 
     return 1;
 }

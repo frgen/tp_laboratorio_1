@@ -46,7 +46,7 @@ int employee_setId(Employee* this,int id)
 
 int employee_getId(Employee* this, int* id)
 {
-    printf("%d", *id);
+    id = this->id;
 
     return 0;
 }
@@ -62,7 +62,7 @@ int employee_setNombre(Employee* this,char* nombre)
 
 int employee_getNombre(Employee* this,char* nombre)
 {
-    printf("%s", this->nombre);
+    strcpy(nombre, this->nombre);
 
     return 0;
 }
@@ -78,7 +78,7 @@ int employee_setHorasTrabajadas(Employee* this,int horasTrabajadas)
 
 int employee_getHorasTrabajadas(Employee* this, int* horasTrabajadas)
 {
-    printf("%d", *horasTrabajadas);
+    horasTrabajadas = this->horasTrabajadas;
 
     return 0;
 }
@@ -94,7 +94,7 @@ int employee_setSueldo(Employee* this,int sueldo)
 
 int employee_getSueldo(Employee* this, int* sueldo)
 {
-    printf("%d", *sueldo);
+    sueldo= this->sueldo;
 
     return 0;
 }
