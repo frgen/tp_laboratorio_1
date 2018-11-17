@@ -22,12 +22,14 @@ Employee* employee_new()
 Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr)
 {
     Employee* empleado;
-    int id, horasTrabajadas, sueldo=0;
+    int id, horasTrabajadas, sueldo;
 
     empleado = employee_new();
 
+    sueldo = rand()*100 + 200;
     id = atoi(idStr);
     horasTrabajadas = atoi(horasTrabajadasStr);
+    sueldo = horasTrabajadas*sueldo;
 
     employee_setId(empleado, id);
     employee_setNombre(empleado, nombreStr);
@@ -46,7 +48,7 @@ int employee_setId(Employee* this,int id)
 
 int employee_getId(Employee* this, int* id)
 {
-    id = this->id;
+    *id = this->id;
 
     return 0;
 }
@@ -78,7 +80,7 @@ int employee_setHorasTrabajadas(Employee* this,int horasTrabajadas)
 
 int employee_getHorasTrabajadas(Employee* this, int* horasTrabajadas)
 {
-    horasTrabajadas = this->horasTrabajadas;
+    *horasTrabajadas = this->horasTrabajadas;
 
     return 0;
 }
@@ -94,7 +96,7 @@ int employee_setSueldo(Employee* this,int sueldo)
 
 int employee_getSueldo(Employee* this, int* sueldo)
 {
-    sueldo= this->sueldo;
+    *sueldo= this->sueldo;
 
     return 0;
 }
