@@ -56,7 +56,7 @@ static Node* getNode(LinkedList* this, int nodeIndex)
 {
     Node* pNode = NULL;
 
-    int len;
+    int len, i;
 
     if(this!=NULL)
     {
@@ -66,12 +66,28 @@ static Node* getNode(LinkedList* this, int nodeIndex)
         {
             pNode = this->pFirstNode;
 
-            if(pNode!=NULL)
+            for(i=0; i<nodeIndex; i++)
             {
-                pNode = pNode->pNextNode;
+                if(pNode!=NULL)
+                {
+                    pNode = pNode->pNextNode;
+                }
             }
         }
     }
+
+    /*
+    pNode = this->pFirstNode;
+    for(i=0; i<ll_len(this); i++)
+    {
+      if(i==nodeIndex)
+      {
+        break;
+      }else{
+        pNode=pNode->pNextNode;
+      }
+    }
+    */
 
     return pNode;
 }

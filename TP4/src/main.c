@@ -28,7 +28,7 @@ int main(void)
 {
  //       startTesting(1);  // ll_newLinkedList
  //       startTesting(2);  // ll_len
-        startTesting(3);  // getNode - test_getNode
+ //       startTesting(3);  // getNode - test_getNode
  /*       startTesting(4);  // addNode - test_addNode
         startTesting(5);  // ll_add
         startTesting(6);  // ll_get
@@ -51,7 +51,31 @@ int main(void)
 
 
 
+/*
 
+nuevo_node
+
+->index = 0
+
+old_node = getNode(this, index);
+
+this->firstNode = nuevo_node;
+
+nuevo_node->nextNode = old_node;
+------------------------------------
+old_node = getNode(this, index);
+
+prev_node = getNode(this, index-1);
+
+prev_node->nextNode = nuevo_node;
+
+nuevo_node->nextNode = old_node;
+------------------------------------
+last_node = getNode(this, index-1);
+
+last_node->nextNode = nuevo_node;
+
+*/
 
 
 
