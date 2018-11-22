@@ -88,8 +88,9 @@
 
 1533133022 /home/fede/Descargas/TP3/Linux_64/parser.h
 
-1541691480 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Controller.c
+1542826710 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Controller.c
 	<stdio.h>
+	<stdio_ext.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
@@ -97,17 +98,18 @@
 
 1541691480 /home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/LinkedList.h
 
-1541691480 /home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Employee.h
+1542407872 /home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Employee.h
 
-1541691480 /home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/parser.h
+1541732532 /home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/parser.h
 
-1541707723 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Employee.c
+1542826810 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Employee.h"
+	"LinkedList.h"
 
-1541691480 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/main.c
+1542406403 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/main.c
 	<stdio.h>
 	<stdio_ext.h>
 	<stdlib.h>
@@ -117,7 +119,44 @@
 
 1541691480 /home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/Controller.h
 
-1541709298 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/parser.c
+1542324067 source:/home/fede/Descargas/tp_laboratorio_1-master/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1542826710 source:/home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1541691480 /home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/LinkedList.h
+
+1542407872 /home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/Employee.h
+
+1541732532 /home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/parser.h
+
+1542407908 source:/home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+
+1542406403 source:/home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1541691480 /home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/Controller.h
+
+1542324067 source:/home/fede/Descargas/tp_laboratorio_1-master(no subido)/TP3/Linux_64/parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"

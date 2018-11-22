@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "LinkedList.h"
 #include "Employee.h"
 #include "parser.h"
@@ -98,9 +99,52 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_editEmployee(LinkedList* pArrayListEmployee)
 {
-    //char id;
+    char option;
+    char nombre[20], horasTrabajadas[20];
+    int id, len, i, sueldo;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
 
     printf("Ingrese el ID: ");
+    scanf("%d", &id);
+
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+        if(arrayEmpleados[i]->id == id)
+        {
+            printf("El empleado es: %s\n", arrayEmpleados[i]->nombre);
+            printf("1.NOMBRE\n2.HORAS TRABAJADAS\n3.SUELDO\n");
+            printf("Elija una opcion: ");
+            fflush(stdin);
+            scanf("%c", &option);
+
+            switch(option)
+            {
+            case '1':
+                printf("Ingrese nuevo nombre: ");
+                fflush(stdin);
+                scanf("%s", nombre);
+                employee_setNombre(arrayEmpleados[i], nombre);
+                break;
+            case '2':
+                printf("Ingrese nuevas horas trabajadas: ");
+                fflush(stdin);
+                scanf("%s", horasTrabajadas);
+                employee_setHorasTrabajadas(arrayEmpleados[i], atoi(horasTrabajadas));
+                break;
+            case '3':
+                printf("Ingrese nuevo sueldo: ");
+                scanf("%d", &sueldo);
+                employee_setSueldo(arrayEmpleados[i], sueldo);
+                break;
+            default:
+                printf("Opcion incorrecta\n");
+            }
+        }
+    }
 
     printf("Modificando datos de empleado\n");
 
@@ -116,7 +160,36 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_removeEmployee(LinkedList* pArrayListEmployee)
 {
-    printf("Dando de baja...\n");
+    char option;
+    int id, len, i, index;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
+
+    printf("Ingrese el ID: ");
+    scanf("%d", &id);
+
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+        if(arrayEmpleados[i]->id == id)
+        {
+            index = ll_indexOf(pArrayListEmployee, arrayEmpleados[i]);
+            printf("El empleado es: %s\n", arrayEmpleados[i]->nombre);
+            printf("Desea borrarlo?: ");
+            fflush(stdin);
+            scanf("%c", &option);
+            option = toupper(option);
+
+            if(option=='S')
+            {
+                ll_remove(pArrayListEmployee, index);
+                printf("Dando de baja...\n");
+            }
+            break;
+        }
+    }
 
     return 1;
 }
@@ -141,8 +214,12 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
     for(i=0; i<len; i++)
     {
         arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
-        printf("%d %s %d %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
-                  arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        if(arrayEmpleados[i]->id !=0)
+        {
+            printf("%d %s %d %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        }
+
     }
 
     return 1;
@@ -157,6 +234,50 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
+    /*char tempText[51];
+    int temp;
+    float  tempSalary;
+    int i, j;
+    for(i=0; i<len-1; i++)
+    {
+        if(list[i].isEmpty==FULL)
+        {
+            for(j=i+1; j<len; j++)
+            {
+                if(list[j].isEmpty==FULL && stricmp(list[i].lastName, list[j].lastName)>0)
+                {
+                    strcpy(tempText, list[i].lastName);
+                    strcpy(list[i].lastName, list[j].lastName);
+                    strcpy(list[j].lastName, tempText);
+
+                    strcpy(tempText, list[i].name);
+                    strcpy(list[i].name, list[j].name);
+                    strcpy(list[j].name, tempText);
+
+                    temp=list[i].id;
+                    list[i].id=list[j].id;
+                    list[j].id=temp;
+
+                    temp=list[i].sector;
+                    list[i].sector=list[j].sector;
+                    list[j].sector=temp;
+
+                    tempSalary=list[i].salary;
+                    list[i].salary=list[j].salary;
+                    list[j].salary=tempSalary;
+                }
+                else if(list[j].isEmpty==FULL && stricmp(list[i].lastName, list[j].lastName)==0)
+                {
+                    if(list[i].sector>list[j].sector)
+                    {
+                        temp=list[i].sector;
+                        list[i].sector=list[j].sector;
+                        list[j].sector=temp;
+                    }
+                }
+            }
+        }
+    }*/
     printf("Ordenando...\n");
 
     return 1;
@@ -177,7 +298,21 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 
     pFile = fopen(path, "w");
 
-    parser_EmployeeFromText(pFile, pArrayListEmployee);
+    int len, i;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
+
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+        if(arrayEmpleados[i]->id !=0)
+        {
+            fprintf(pFile, "%d, %s, %d, %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        }
+    }
 
     fclose(pFile);
 
@@ -199,7 +334,21 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
 
     pFile = fopen(path, "wb");
 
-    parser_EmployeeFromBinary(pFile, pArrayListEmployee);
+    int len, i;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
+
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+        if(arrayEmpleados[i]->id !=0)
+        {
+            fprintf(pFile, "%d, %s, %d, %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        }
+    }
 
     fclose(pFile);
 

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Employee.h"
@@ -38,6 +39,14 @@ int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
     printf("Cargando datos en modo binario...\n");
 
+    FILE* pFile;
+
+    pFile = fopen(path, "rb");
+
+    parser_EmployeeFromBinary(pFile, pArrayListEmployee);
+
+    fclose(pFile);
+
     return 1;
 }
 
@@ -50,7 +59,26 @@ int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
  */
 int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
+    char id[10], nombre[128], horasTrabajadas[10];
+    Employee* empleado;
+
+    printf("Ingrese el ID: ");
+    __fpurge(stdin);
+    fgets(id, 20, stdin);
+
+    printf("Ingrese el nombre: ");
+    __fpurge(stdin);
+    scanf("%s", nombre);
+
+    printf("Ingrese las horas trabajadas: ");
+    __fpurge(stdin);
+    scanf("%s", horasTrabajadas);
+
     printf("Dando de alta...\n");
+
+    empleado = employee_newParametros(id, nombre, horasTrabajadas);
+
+    ll_add(pArrayListEmployee, empleado);
 
     return 1;
 }
@@ -92,15 +120,25 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
+    int len, i;
+
+    len = ll_len(pArrayListEmployee);
+
     printf("Listando...\n");
 
-    FILE* pFile;
+    Employee* arrayEmpleados[len];
 
-    pFile = fopen("data.csv", "r");
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
 
-    parser_EmployeeListText(pFile, pArrayListEmployee);
+        if(i>0)
+        {
+            printf("%d\t%s\t%d\t%d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        }
 
-    fclose(pFile);
+    }
 
     return 1;
 }
@@ -130,6 +168,28 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 {
     printf("Guardando datos en modo texto...\n");
 
+    FILE* pFile;
+
+    pFile = fopen(path, "w");
+
+    int len, i;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
+
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+        if(i > 0)
+        {
+            fprintf(pFile, "%d, %s, %d, %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        }
+    }
+
+    fclose(pFile);
+
     return 1;
 }
 
@@ -143,6 +203,28 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
 {
     printf("Guardando datos en modo binario...\n");
+
+    FILE* pFile;
+
+    pFile = fopen(path, "wb");
+
+    int len, i;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
+
+    for(i=0; i<len; i++)
+    {
+        arrayEmpleados[i] = ll_get(pArrayListEmployee, i);
+        if(i > 0)
+        {
+            fprintf(pFile, "%d, %s, %d, %d\n", arrayEmpleados[i]->id, arrayEmpleados[i]->nombre,
+                    arrayEmpleados[i]->horasTrabajadas, arrayEmpleados[i]->sueldo);
+        }
+    }
+
+    fclose(pFile);
 
     return 1;
 }
