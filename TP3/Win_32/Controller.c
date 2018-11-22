@@ -234,25 +234,31 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
+    int len, i;
+
+    len = ll_len(pArrayListEmployee);
+
+    Employee* arrayEmpleados[len];
+
     /*char tempText[51];
     int temp;
     float  tempSalary;
     int i, j;
     for(i=0; i<len-1; i++)
     {
-        if(list[i].isEmpty==FULL)
+        if(arrayEmpleados[i]->id !=0)
         {
             for(j=i+1; j<len; j++)
             {
-                if(list[j].isEmpty==FULL && stricmp(list[i].lastName, list[j].lastName)>0)
+                if(arrayEmpleados[i]->id !=0 && stricmp(arrayEmpleados[i]->nombre, arrayEmpleados[j]->nombre)>0)
                 {
-                    strcpy(tempText, list[i].lastName);
-                    strcpy(list[i].lastName, list[j].lastName);
-                    strcpy(list[j].lastName, tempText);
+                    strcpy(tempText, arrayEmpleados[i]->nombre);
+                    strcpy(arrayEmpleados[i]->nombre, arrayEmpleados[j]->nombre);
+                    strcpy(arrayEmpleados[j]->nombre, tempText);
 
-                    strcpy(tempText, list[i].name);
-                    strcpy(list[i].name, list[j].name);
-                    strcpy(list[j].name, tempText);
+                    strcpy(tempText, arrayEmpleados[i]->nombre);
+                    strcpy(arrayEmpleados[i]->nombre, arrayEmpleados[j]->nombre);
+                    strcpy(arrayEmpleados[j]->nombre, tempText);
 
                     temp=list[i].id;
                     list[i].id=list[j].id;
