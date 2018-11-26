@@ -104,20 +104,16 @@ static int addNode(LinkedList* this, int nodeIndex,void* pElement)
 {
     int returnAux = -1;
 
-    Node* auxNode = test_getNode(this, nodeIndex);
+    Node* first=(Node*)malloc(sizeof(Node));
 
     if(this!=NULL)
     {
-        if(nodeIndex >= 0 )
-        {
-            this->pFirstNode = auxNode;
-            this->size +=1;
+        this->pFirstNode = first;
+        this->pFirstNode->pElement=pElement;
 
-            printf("Hola");
-        }
+        this->size += 1;
 
         returnAux = 0;
-
     }
 
     return returnAux;
@@ -148,27 +144,19 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
  */
 int ll_add(LinkedList* this, void* pElement)
 {
+    //int i;
     int returnAux = -1;
 
-    Node* auxNode;
+    //Node* auxNode;
 
-    if(this!=NULL)
+    /*if(this!=NULL)
     {
-        auxNode = this->pFirstNode;
 
-        this->size += 1;
-
-        if(auxNode!=NULL)
-        {
-            auxNode = auxNode->pNextNode;
-
-        }
 
         //auxNode->pElement = pElement;
 
-
         returnAux = 0;
-    }
+    }*/
 
     return returnAux;
 }
