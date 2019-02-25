@@ -26,12 +26,12 @@
 
 int main(void)
 {
- //       startTesting(1);  // ll_newLinkedList
- //       startTesting(2);  // ll_len
- //       startTesting(3);  // getNode - test_getNode
-       startTesting(4);  // addNode - test_addNode
- //       startTesting(5);  // ll_add
-/*      startTesting(6);  // ll_get
+        startTesting(1);  // ll_newLinkedList
+        startTesting(2);  // ll_len
+        startTesting(3);  // getNode - test_getNode
+        startTesting(4);  // addNode - test_addNode
+        startTesting(5);  // ll_add
+        startTesting(6);  // ll_get
         startTesting(7);  // ll_set
         startTesting(8);  // ll_remove
         startTesting(9);  // ll_clear
@@ -44,38 +44,14 @@ int main(void)
         startTesting(16); // ll_containsAll
         startTesting(17); // ll_subList
         startTesting(18); // ll_clone
-        startTesting(19); // ll_sort */
+        startTesting(19); // ll_sort
 
     return 0;
 }
 
 
 
-/*
 
-new_node
-
-->index = 0
-
-old_node = getNode(this, index);
-
-this->pFirstNode = new_node;
-
-new_node->pNextNode = old_node;
-------------------------------------
-old_node = getNode(this, index);
-
-prev_node = getNode(this, index-1);
-
-prev_node->pNextNode = new_node;
-
-new_node->pNextNode = old_node;
-------------------------------------
-last_node = getNode(this, index-1);
-
-last_node->pNextNode = new_node;
-
-*/
 
 /// LinkedList* ll_filter(LinkedList* list, int (*pFunc)(void*))
 

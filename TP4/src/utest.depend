@@ -4640,7 +4640,7 @@
 
 1542846137 c:\users\alumno\desktop\tp_laboratorio_1-master\tp4\testing\inc\main_test.h
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/addNodeTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/addNodeTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4648,13 +4648,13 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/utest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/utest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/inc/LinkedList.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/inc/LinkedList.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/Employee.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/Employee.h
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/addTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/addTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4662,7 +4662,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/clearTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/clearTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4670,7 +4670,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/cloneTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/cloneTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4678,7 +4678,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/containsAllTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/containsAllTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4686,7 +4686,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/containsTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/containsTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4694,7 +4694,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/deleteLinkedListTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/deleteLinkedListTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4702,13 +4702,13 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/Employee.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/Employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/getNodeTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/getNodeTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4716,7 +4716,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/getTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/getTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4724,7 +4724,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/indexOfTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/indexOfTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4732,7 +4732,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/isEmptyTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/isEmptyTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4740,7 +4740,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/lenTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/lenTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4748,7 +4748,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/main_test.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/main_test.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4772,60 +4772,52 @@
 	"../inc/containsAllTest.h"
 	"../inc/sortTest.h"
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/newTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/newTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/addTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/addTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/getNodeTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/getNodeTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/addNodeTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/addNodeTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/deleteLinkedListTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/deleteLinkedListTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/lenTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/lenTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/getTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/getTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/containsTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/containsTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/setTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/setTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/removeTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/removeTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/clearTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/clearTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/cloneTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/cloneTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/pushTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/pushTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/indexOfTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/indexOfTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/isEmptyTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/isEmptyTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/popTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/popTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/subListTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/subListTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/containsAllTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/containsAllTest.h
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/sortTest.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/sortTest.h
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/newTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/newTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../inc/LinkedList.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/popTest.c
-	"../../testing/utest.h"
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"../../inc/LinkedList.h"
-	"../../testing/inc/Employee.h"
-
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/pushTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/popTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4833,7 +4825,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/removeTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/pushTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4841,7 +4833,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/setTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/removeTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4849,7 +4841,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/sortTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/setTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4857,7 +4849,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/subListTest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/sortTest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -4865,26 +4857,34 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1542899796 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/utest.c
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/src/subListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1543290858 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/utest.c
 	"utest.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1543267181 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/src/LinkedList.c
+1550260120 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/src/LinkedList.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../inc/LinkedList.h"
 
-1543261238 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/src/main.c
+1550259781 source:/home/fede/Descargas/tp_laboratorio_1-master/TP4/src/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../testing/inc/main_test.h"
 	"../inc/LinkedList.h"
 
-1542899796 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/main_test.h
+1543290858 /home/fede/Descargas/tp_laboratorio_1-master/TP4/testing/inc/main_test.h
 
 1543271699 source:/home/nati/Descargas/tp_laboratorio_1-master/TP4/testing/src/addNodeTest.c
 	"../../testing/utest.h"
@@ -5131,4 +5131,490 @@
 	"../inc/LinkedList.h"
 
 1543271699 /home/nati/Descargas/tp_laboratorio_1-master/TP4/testing/inc/main_test.h
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/addNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109208 /home/fede/Descargas/TP4 (comentado)/testing/utest.h
+
+1551109206 /home/fede/Descargas/TP4 (comentado)/inc/LinkedList.h
+
+1551109208 /home/fede/Descargas/TP4 (comentado)/testing/inc/Employee.h
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/addTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/clearTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/cloneTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/containsAllTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/containsTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/deleteLinkedListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/getNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/getTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109210 source:/home/fede/Descargas/TP4 (comentado)/testing/src/indexOfTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/isEmptyTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/lenTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/main_test.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	"../inc/newTest.h"
+	"../inc/addTest.h"
+	"../inc/getNodeTest.h"
+	"../inc/addNodeTest.h"
+	"../inc/deleteLinkedListTest.h"
+	"../inc/lenTest.h"
+	"../inc/getTest.h"
+	"../inc/containsTest.h"
+	"../inc/setTest.h"
+	"../inc/removeTest.h"
+	"../inc/clearTest.h"
+	"../inc/cloneTest.h"
+	"../inc/pushTest.h"
+	"../inc/indexOfTest.h"
+	"../inc/isEmptyTest.h"
+	"../inc/popTest.h"
+	"../inc/subListTest.h"
+	"../inc/containsAllTest.h"
+	"../inc/sortTest.h"
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/newTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/addTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/getNodeTest.h
+
+1551109208 /home/fede/Descargas/TP4 (comentado)/testing/inc/addNodeTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/deleteLinkedListTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/lenTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/getTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/containsTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/setTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/removeTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/clearTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/cloneTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/pushTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/indexOfTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/isEmptyTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/popTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/subListTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/containsAllTest.h
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/sortTest.h
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/newTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/popTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/pushTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/removeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/setTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/sortTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109212 source:/home/fede/Descargas/TP4 (comentado)/testing/src/subListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1551109208 source:/home/fede/Descargas/TP4 (comentado)/testing/utest.c
+	"utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1551109206 source:/home/fede/Descargas/TP4 (comentado)/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../testing/inc/main_test.h"
+	"../inc/LinkedList.h"
+
+1551109210 /home/fede/Descargas/TP4 (comentado)/testing/inc/main_test.h
+
+1550866910 source:/home/nati/Descargas/TP4 (comentado)/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../testing/inc/main_test.h"
+	"../inc/LinkedList.h"
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/main_test.h
+
+1550866908 /home/nati/Descargas/TP4 (comentado)/inc/LinkedList.h
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/addNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866912 /home/nati/Descargas/TP4 (comentado)/testing/utest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/Employee.h
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/addTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/clearTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/cloneTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/containsAllTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/containsTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/deleteLinkedListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/getNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/getTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/indexOfTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/isEmptyTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/lenTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/main_test.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	"../inc/newTest.h"
+	"../inc/addTest.h"
+	"../inc/getNodeTest.h"
+	"../inc/addNodeTest.h"
+	"../inc/deleteLinkedListTest.h"
+	"../inc/lenTest.h"
+	"../inc/getTest.h"
+	"../inc/containsTest.h"
+	"../inc/setTest.h"
+	"../inc/removeTest.h"
+	"../inc/clearTest.h"
+	"../inc/cloneTest.h"
+	"../inc/pushTest.h"
+	"../inc/indexOfTest.h"
+	"../inc/isEmptyTest.h"
+	"../inc/popTest.h"
+	"../inc/subListTest.h"
+	"../inc/containsAllTest.h"
+	"../inc/sortTest.h"
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/newTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/addTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/getNodeTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/addNodeTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/deleteLinkedListTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/lenTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/getTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/containsTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/setTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/removeTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/clearTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/cloneTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/pushTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/indexOfTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/isEmptyTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/popTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/subListTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/containsAllTest.h
+
+1550866914 /home/nati/Descargas/TP4 (comentado)/testing/inc/sortTest.h
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/newTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+
+1550866914 source:/home/nati/Descargas/TP4 (comentado)/testing/src/popTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866916 source:/home/nati/Descargas/TP4 (comentado)/testing/src/pushTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866916 source:/home/nati/Descargas/TP4 (comentado)/testing/src/removeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866916 source:/home/nati/Descargas/TP4 (comentado)/testing/src/setTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866916 source:/home/nati/Descargas/TP4 (comentado)/testing/src/sortTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866916 source:/home/nati/Descargas/TP4 (comentado)/testing/src/subListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1550866912 source:/home/nati/Descargas/TP4 (comentado)/testing/utest.c
+	"utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1551123889 source:/home/fede/Descargas/TP4 (comentado)/src/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
 
